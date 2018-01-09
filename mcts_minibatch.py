@@ -50,7 +50,7 @@ class Node:
         else:
             # select
             self.select()
-            q = -1
+            q = -1 if self.player == 0 else 1
             score = (self.U + self.Q * q) + self.state.illegal_actions_to_minus()
             action = np.argmax(score)
             self.N[[action]] += virtual_loss
