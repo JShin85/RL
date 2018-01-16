@@ -46,7 +46,7 @@ def main():
     if args.size == 3:
         env = gym.make('SelfGo3x3-v0')
     elif args.size == 5:
-        env = gym.make('SelfGo3x3-v0')
+        env = gym.make('SelfGo5x5-v0')
     else:
         env = gym.make('SelfGo9x9-v0')
 
